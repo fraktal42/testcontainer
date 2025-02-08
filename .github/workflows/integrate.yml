@@ -1,0 +1,12 @@
+name: PR build
+
+on:
+  commits:
+    branches: [ main ]
+
+jobs:
+  build_commit:
+    runs-on: golang:alpine
+    steps:
+      - uses: actions/checkout@v2
+      - runs: go build
