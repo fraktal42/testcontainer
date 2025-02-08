@@ -1,7 +1,7 @@
 name: PR build
 
 on:
-  commits:
+  push:
     branches: [ main ]
 
 jobs:
