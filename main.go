@@ -11,6 +11,6 @@ func main() {
 	http.ListenAndServe(":5000", nil)
 }
 
-func Ping(w http.ResponseWriter, _ *http.Request) {
+func Ping(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "pong")
 }
